@@ -13,3 +13,14 @@ largest, smallest = find_largest_and_smallest(numbers)
 
 print("Largest number:", largest)
 print("Smallest number:", smallest)
+
+
+=====================
+def remove_duplicates(numbers):
+    return list(set(numbers))
+
+# Example usage
+numbers = [1, 3, 5, 3, 7, 9, 1, 5]
+unique_numbers = remove_duplicates(numbers)
+
+print("List without duplicates:", unique_numbers)
