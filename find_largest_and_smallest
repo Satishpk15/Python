@@ -1,0 +1,15 @@
+def find_largest_and_smallest(numbers):
+    if not numbers:
+        return None, None  # Return None if the list is empty
+
+    largest = max(numbers)
+    smallest = min(numbers)
+    
+    return largest, smallest
+
+# Example usage
+numbers = [3, 7, 2, 9, 1, 8]
+largest, smallest = find_largest_and_smallest(numbers)
+
+print("Largest number:", largest)
+print("Smallest number:", smallest)
