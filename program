@@ -1,0 +1,21 @@
+Given a list of names, count how many names start with a vowel (A, E, I, O, U)
+====================================================================
+names = ["Alice", "Bob", "Emily", "David", "Oliver", "Sarah"]
+vowels = ("A", "E", "I", "O", "U")
+count = 0
+for name in names:
+    if name.startswith(vowels):
+        count += 1
+print("Number of names starting with a vowel:", count)
+
+Use enumerate() to track both index and value. find the max values in list
+==========================================================
+numbers = [45, 12, 78, 34, 89, 23]
+max_value = numbers[0]
+max_index = 0
+for index, value in enumerate(numbers):
+    if value > max_value:
+        max_value = value
+        max_index = index
+print("Maximum value:", max_value)
+print("Index of maximum value:", max_index)
